@@ -1,0 +1,453 @@
+// swift-interface-format-version: 1.0
+// swift-compiler-version: Apple Swift version 5.5.2 (swiftlang-1300.0.47.5 clang-1300.0.29.30)
+// swift-module-flags: -target arm64-apple-ios13.0-simulator -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -module-name onceBLE
+import Combine
+import CoreBluetooth
+import Foundation
+import NordicDFU
+import Swift
+import _Concurrency
+@objc @_inheritsConvenienceInitializers public class OBCentral : ObjectiveC.NSObject {
+  @objc override dynamic public init()
+  public static func register<T>(customPeripheralType _: T.Type) where T : onceBLE.OBPeripheralTypeCheck
+  public func borrowCentral() -> CoreBluetooth.CBCentralManager?
+  public func returnCentral()
+  @objc deinit
+}
+extension onceBLE.OBCentral : CoreBluetooth.CBCentralManagerDelegate {
+  @objc dynamic public func centralManager(_: CoreBluetooth.CBCentralManager, didDiscover peripheral: CoreBluetooth.CBPeripheral, advertisementData: [Swift.String : Any], rssi RSSI: Foundation.NSNumber)
+  @objc dynamic public func centralManager(_: CoreBluetooth.CBCentralManager, didConnect peripheral: CoreBluetooth.CBPeripheral)
+  @objc dynamic public func centralManager(_: CoreBluetooth.CBCentralManager, didDisconnectPeripheral peripheral: CoreBluetooth.CBPeripheral, error: Swift.Error?)
+  @objc dynamic public func centralManager(_: CoreBluetooth.CBCentralManager, didFailToConnect peripheral: CoreBluetooth.CBPeripheral, error: Swift.Error?)
+  @objc dynamic public func centralManagerDidUpdateState(_ central: CoreBluetooth.CBCentralManager)
+  @objc dynamic public func centralManager(_: CoreBluetooth.CBCentralManager, willRestoreState _: [Swift.String : Any])
+}
+@objc @_inheritsConvenienceInitializers public class OBCentralManager : onceBLE.OBCentral {
+  convenience public init(loggingEnabled: Swift.Bool, mockMode: Swift.Bool = false)
+  public func startScanningForPeripherals(with scanOptions: onceBLE.OBScanOptions, _ filter: onceBLE.OBScanFilter?) -> onceBLE.OBError?
+  public func stopScanningForPeripherals() -> onceBLE.OBError?
+  public func clearScanResults(except peripheral: onceBLE.OBPeripheral? = nil) -> onceBLE.OBError?
+  public func filter(peripheral: onceBLE.OBPeripheral) -> onceBLE.OBError?
+  @objc override dynamic public init()
+  @objc deinit
+}
+extension onceBLE.OBCentralManager {
+  public func on(_ event: onceBLE.OBEvent)
+}
+public struct OBConnectionOptions {
+  public var timeout: Foundation.TimeInterval
+  public var numberOfRetries: Swift.Int
+  public init(timeout: Foundation.TimeInterval, numberOfRetries: Swift.Int)
+}
+public enum OBEvent {
+  case ConnectedPeripheral(_: ((onceBLE.OBPeripheral) -> Swift.Void)? = nil)
+  case FailedToConnectPeripheral(_: ((onceBLE.OBPeripheral) -> Swift.Void)? = nil)
+  case DisconnectedPeripheral(_: ((onceBLE.OBPeripheral) -> Swift.Void)? = nil)
+  case DiscoveredPeripheral(_: ((onceBLE.OBPeripheral, onceBLE.OBAdvertisementData) -> Swift.Void)? = nil)
+  case BleReady(_: (() -> Swift.Void)? = nil)
+  case OnDiscoveredRegisteredType(_: ((Any, onceBLE.OBAdvertisementData) -> Swift.Void)? = nil)
+}
+public struct OBScanOptions {
+  public var allowDuplicates: Swift.Bool
+  public var services: [CoreBluetooth.CBUUID]
+  public var scanDuration: Foundation.TimeInterval?
+  public var mininumRSSI: Swift.Int?
+  public var dataTimeout: Foundation.TimeInterval?
+  public var registeredTypesOnly: Swift.Bool
+  public init(allowDuplicates: Swift.Bool, registeredTypesOnly: Swift.Bool, services: [CoreBluetooth.CBUUID], dataTimeout: Foundation.TimeInterval? = nil, scanDuration: Foundation.TimeInterval? = nil, minimumRSSI: Swift.Int? = nil)
+}
+public protocol OTAServiceProvider {
+  var updateProgress: Combine.Published<Swift.Int>.Publisher { get }
+  var updateSpeed: Combine.Published<Swift.Double>.Publisher { get }
+  var logMessage: Combine.Published<Swift.String>.Publisher { get }
+  var serviceName: Swift.String { get set }
+  func setCentralManager(central: CoreBluetooth.CBCentralManager)
+  func setPeripheral(peripheral: CoreBluetooth.CBPeripheral)
+  func setOtaFile(url: Foundation.URL) -> Swift.Bool
+  func begin() -> Swift.Bool
+  func reset()
+}
+public enum OTAProvider {
+  public static func checkOtaSupport(serviceUUID: CoreBluetooth.CBUUID) -> onceBLE.OTAServiceProvider?
+}
+open class OBCharacteristic {
+  @Combine.Published @_projectedValueProperty($value) public var value: Foundation.Data? {
+    get
+    set
+    _modify
+  }
+  public var $value: Combine.Published<Foundation.Data?>.Publisher {
+    get
+    @available(iOS 14.0, tvOS 14.0, watchOS 7.0, macOS 11.0, *)
+    set
+  }
+  public var uuid: CoreBluetooth.CBUUID
+  public var descriptors: [onceBLE.OBDescriptor]
+  public var notificationsEnabled: Swift.Bool {
+    get
+  }
+  public init(characteristicUUID: CoreBluetooth.CBUUID, descriptors: [onceBLE.OBDescriptor] = [])
+  public func setNotifcationState(enabled: Swift.Bool)
+  public func readDescriptors()
+  public func read(_ onRead: ((Foundation.Data, Swift.Error) -> Swift.Void)? = nil)
+  public func write(data: Foundation.Data, withResponse: Swift.Bool, onWriteCompleted: ((_ success: Swift.Bool) -> Swift.Void)? = nil)
+  @objc deinit
+}
+extension onceBLE.OBCharacteristic {
+  public func supports(property: onceBLE.OBCharacteristicProperty) -> Swift.Bool
+  public func rawData() -> Foundation.Data?
+  public func dataBytes() -> [Swift.UInt8]
+  public func asciiString() -> Swift.String?
+  public func hexString() -> Swift.String?
+}
+public enum OBCharacteristicProperty : Swift.String {
+  case Broadcast
+  case ExtendedProperties
+  case Indicate
+  case Notify
+  case NotifyEncryptionRequired
+  case IndicateEncryptionRequired
+  case Read
+  case Write
+  case WriteWithoutResponse
+  case AuthenticatedSignedWrites
+  public init?(rawValue: Swift.String)
+  public typealias RawValue = Swift.String
+  public var rawValue: Swift.String {
+    get
+  }
+}
+public class OBDescriptor {
+  public var uuid: CoreBluetooth.CBUUID
+  public var systemDescriptor: CoreBluetooth.CBDescriptor?
+  public init(descriptorUUID: CoreBluetooth.CBUUID)
+  convenience public init(descriptor: CoreBluetooth.CBDescriptor, peripheral: CoreBluetooth.CBPeripheral)
+  public func getValue() -> Swift.String
+  public func onValueChanged(_ valueUpdateHandler: @escaping (() -> Swift.Void))
+  public func read()
+  @objc deinit
+}
+extension onceBLE.OBDescriptor {
+  public func didUpdateValue()
+}
+@objc open class OBGatt : ObjectiveC.NSObject {
+  public init(gattRole: onceBLE.OBGattRole = .client, peripheralManager: onceBLE.OBPeripheralManager? = nil)
+  public func addServices(services: [onceBLE.OBService])
+  @objc deinit
+}
+public enum OBGattRole {
+  case client
+  case server
+  public static func == (a: onceBLE.OBGattRole, b: onceBLE.OBGattRole) -> Swift.Bool
+  public func hash(into hasher: inout Swift.Hasher)
+  public var hashValue: Swift.Int {
+    get
+  }
+}
+public protocol OBGattServer {
+  associatedtype T : onceBLE.OBGatt
+  var customGatt: Self.T { get set }
+}
+public protocol OBGattServerClient : onceBLE.OBGattServer, onceBLE.OBPeripheralTypeCheck {
+}
+open class OBService {
+  public var uuid: CoreBluetooth.CBUUID
+  public var characteristics: [onceBLE.OBCharacteristic]
+  public init(serviceUUID: CoreBluetooth.CBUUID, characteristics: [onceBLE.OBCharacteristic])
+  convenience public init(service: CoreBluetooth.CBService)
+  convenience public init(mock: Swift.Bool)
+  @objc deinit
+}
+public enum LogDataType : Swift.String {
+  case DFUMessage
+  case Advertisement
+  case Beacon
+  case ConnectionAttempt
+  case ConnectionAttemptFailed
+  case Connected
+  case DisconnectionAttempt
+  case Disconnected
+  case WroteCharacteristic
+  case WroteDescriptor
+  case ReadCharacteristic
+  case ReadDescriptor
+  case NotificationEvent
+  case DiscoveredServices
+  case DiscoveredCharacteristics
+  case DiscoveredDescriptors
+  case CharacteristicValueUpdated
+  case DescriptorValueUpdated
+  case BluetoothStateUpdated
+  case ReadRssi
+  case Misc
+  public init?(rawValue: Swift.String)
+  public typealias RawValue = Swift.String
+  public var rawValue: Swift.String {
+    get
+  }
+}
+extension onceBLE.LogDataType : Swift.CaseIterable {
+  public typealias AllCases = [onceBLE.LogDataType]
+  public static var allCases: [onceBLE.LogDataType] {
+    get
+  }
+}
+@_hasMissingDesignatedInitializers open class OBDataLogger {
+  public enum LogDataCategory {
+    case AdvertisementData
+    case ConnectionEvents
+    case DisconnectionEvents
+    case ReadWriteEvents
+    case NotficationIndicationEvents
+    case GattDiscoveryEvents
+    case RSSIUpdates
+    public static func == (a: onceBLE.OBDataLogger.LogDataCategory, b: onceBLE.OBDataLogger.LogDataCategory) -> Swift.Bool
+    public func hash(into hasher: inout Swift.Hasher)
+    public var hashValue: Swift.Int {
+      get
+    }
+  }
+  @Combine.Published @_projectedValueProperty($newLogEntry) public var newLogEntry: onceBLE.OBDataLogger.LogEntry? {
+    get
+    set
+    _modify
+  }
+  public var $newLogEntry: Combine.Published<onceBLE.OBDataLogger.LogEntry?>.Publisher {
+    get
+    @available(iOS 14.0, tvOS 14.0, watchOS 7.0, macOS 11.0, *)
+    set
+  }
+  public struct LogEntry {
+    public var logType: onceBLE.LogDataType
+    public var logData: Swift.String
+    public var timeStamp: Foundation.Date
+  }
+  public func disableAll()
+  public func enableConsoleLogging()
+  public func setLogCategory(category: onceBLE.OBDataLogger.LogDataCategory, enabled: Swift.Bool)
+  public static func shared() -> onceBLE.OBDataLogger
+  @objc deinit
+}
+extension Foundation.Date {
+  public var formatted: Swift.String {
+    get
+  }
+}
+public enum OBError : Swift.String {
+  case bleRadioNotReady
+  case badParameters
+  public init?(rawValue: Swift.String)
+  public typealias RawValue = Swift.String
+  public var rawValue: Swift.String {
+    get
+  }
+}
+public enum OBAdvertisement {
+  case connectable(_: Swift.Bool, _: Swift.String = CBAdvertisementDataIsConnectable)
+  case localName(_: Swift.String, _: Swift.String = CBAdvertisementDataLocalNameKey)
+  case manufacturerData(_: Foundation.Data, _: Swift.String = CBAdvertisementDataManufacturerDataKey)
+  case serviceUUIDs(_: [CoreBluetooth.CBUUID], _: Swift.String = CBAdvertisementDataServiceUUIDsKey)
+  case serviceData(_: [CoreBluetooth.CBUUID : Foundation.Data], _: Swift.String = CBAdvertisementDataServiceDataKey)
+}
+public struct OBAdvertisementData : Swift.CustomStringConvertible {
+  public var connectable: Swift.Bool?
+  public var manufacturerData: Foundation.Data?
+  public var overflowServiceUUIDs: [CoreBluetooth.CBUUID]?
+  public var serviceData: [CoreBluetooth.CBUUID : Foundation.NSData]?
+  public var services: [CoreBluetooth.CBUUID]?
+  public var solicitedServiceUUIDs: [CoreBluetooth.CBUUID]?
+  public var transmitPowerLevel: Foundation.NSNumber?
+  public var localName: Swift.String?
+  public var rssi: Swift.Int?
+  public var timeStamp: Foundation.Date?
+  public var seen: Swift.Int
+  public var advIntervalEstimate: Swift.Double?
+  public var company: Swift.String
+  public var uuid: Foundation.UUID
+  public init(rawAdvData: [Swift.String : Any], rssi RSSI: Foundation.NSNumber, friendlyName: Swift.String?, mock: Swift.Bool = false, uuid: Foundation.UUID)
+  public var searchableString: Swift.String
+  public var description: Swift.String {
+    get
+  }
+}
+public enum OBConnectionState {
+  case Connecting
+  case Connected
+  case PerformingGattDiscovery
+  case GattDiscoveryCompleted
+  case SetupCompleted
+  case Disconnected
+  case GattDiscoveryFailed
+  case ConnectionFailed
+  case ConnectionAttemptTimedOut
+  public static func == (a: onceBLE.OBConnectionState, b: onceBLE.OBConnectionState) -> Swift.Bool
+  public func hash(into hasher: inout Swift.Hasher)
+  public var hashValue: Swift.Int {
+    get
+  }
+}
+public protocol OBCustomPeripheral : onceBLE.OBPeripheral, onceBLE.OBGattServerClient {
+}
+@objc @_inheritsConvenienceInitializers open class Peripheral : ObjectiveC.NSObject {
+  @objc override dynamic public init()
+  @objc deinit
+}
+@objc open class OBPeripheral : onceBLE.Peripheral {
+  @Combine.Published @_projectedValueProperty($rssi) public var rssi: Swift.Int {
+    get
+  }
+  public var $rssi: Combine.Published<Swift.Int>.Publisher {
+    get
+  }
+  @Combine.Published @_projectedValueProperty($connectionState) public var connectionState: onceBLE.OBConnectionState {
+    get
+  }
+  public var $connectionState: Combine.Published<onceBLE.OBConnectionState>.Publisher {
+    get
+  }
+  @Combine.Published @_projectedValueProperty($historicalRSSI) public var historicalRSSI: [(Swift.Int, Foundation.Date)] {
+    get
+  }
+  public var $historicalRSSI: Combine.Published<[(Swift.Int, Foundation.Date)]>.Publisher {
+    get
+  }
+  @Combine.Published @_projectedValueProperty($latestAdvData) public var latestAdvData: onceBLE.OBAdvertisementData? {
+    get
+  }
+  public var $latestAdvData: Combine.Published<onceBLE.OBAdvertisementData?>.Publisher {
+    get
+  }
+  @Combine.Published @_projectedValueProperty($connectable) public var connectable: Swift.Bool {
+    get
+  }
+  public var $connectable: Combine.Published<Swift.Bool>.Publisher {
+    get
+  }
+  @Combine.Published @_projectedValueProperty($didTimeout) public var didTimeout: Swift.Bool {
+    get
+  }
+  public var $didTimeout: Combine.Published<Swift.Bool>.Publisher {
+    get
+  }
+  @Combine.Published @_projectedValueProperty($name) public var name: Swift.String {
+    get
+    set
+    _modify
+  }
+  public var $name: Combine.Published<Swift.String>.Publisher {
+    get
+    @available(iOS 14.0, tvOS 14.0, watchOS 7.0, macOS 11.0, *)
+    set
+  }
+  public var otaService: onceBLE.OTAServiceProvider?
+  open var onCompleted: ((Swift.Bool) -> Swift.Void)?
+  open var timeoutHandler: (() -> Swift.Void)?
+  public var gatt: onceBLE.OBGatt?
+  public var central: CoreBluetooth.CBCentralManager?
+  public var mockID: Foundation.UUID?
+  public var id: Foundation.UUID? {
+    get
+  }
+  open func latestRssi(rssi _: Swift.Int)
+  public init(gatt: onceBLE.OBGatt? = nil, peripheral: CoreBluetooth.CBPeripheral? = nil, advData: onceBLE.OBAdvertisementData?, _: Swift.Bool? = false, mock: Swift.Bool = false)
+  public func readRSSI()
+  public func connect(withOptions options: onceBLE.OBConnectionOptions) -> Combine.Published<onceBLE.OBConnectionState>.Publisher?
+  public func reconnect()
+  public func onTimeout(_ timeoutHandler: @escaping (() -> Swift.Void))
+  open func waitForSetup(_: @escaping (() -> Swift.Void)) -> Swift.Bool
+  open func newValueFor(characteristic _: CoreBluetooth.CBCharacteristic)
+  open func disconnected()
+  open func gattDiscoveryFinished()
+  open func wroteValueFor(characteristic _: CoreBluetooth.CBCharacteristic)
+  @objc deinit
+}
+extension onceBLE.OBPeripheral {
+  public func onCompletedGattDiscovery(_ onCompleted: @escaping ((Swift.Bool) -> Swift.Void))
+  @objc dynamic open func disconnect()
+  public func readValue(characteristic: CoreBluetooth.CBCharacteristic)
+}
+extension onceBLE.OBPeripheral {
+  @objc dynamic open func centralConnected()
+  public func centralDisconnected(_: Swift.Error?)
+}
+extension onceBLE.OBPeripheral : CoreBluetooth.CBPeripheralDelegate {
+  @objc dynamic public func peripheral(_ peripheral: CoreBluetooth.CBPeripheral, didDiscoverServices _: Swift.Error?)
+  @objc dynamic public func peripheral(_ peripheral: CoreBluetooth.CBPeripheral, didDiscoverCharacteristicsFor service: CoreBluetooth.CBService, error _: Swift.Error?)
+  @objc dynamic public func peripheral(_ peripheral: CoreBluetooth.CBPeripheral, didDiscoverDescriptorsFor characteristic: CoreBluetooth.CBCharacteristic, error: Swift.Error?)
+}
+extension onceBLE.OBPeripheral {
+  @objc dynamic public func peripheral(_: CoreBluetooth.CBPeripheral, didUpdateValueFor characteristic: CoreBluetooth.CBCharacteristic, error: Swift.Error?)
+  @objc dynamic public func peripheral(_: CoreBluetooth.CBPeripheral, didWriteValueFor characteristic: CoreBluetooth.CBCharacteristic, error: Swift.Error?)
+  @objc dynamic public func peripheral(_: CoreBluetooth.CBPeripheral, didUpdateNotificationStateFor characteristic: CoreBluetooth.CBCharacteristic, error _: Swift.Error?)
+  @objc dynamic public func peripheral(_: CoreBluetooth.CBPeripheral, didWriteValueFor descriptor: CoreBluetooth.CBDescriptor, error: Swift.Error?)
+  @objc dynamic public func peripheral(_: CoreBluetooth.CBPeripheral, didUpdateValueFor descriptor: CoreBluetooth.CBDescriptor, error: Swift.Error?)
+}
+extension onceBLE.OBPeripheral {
+  @objc dynamic public func peripheral(_ peripheral: CoreBluetooth.CBPeripheral, didReadRSSI RSSI: Foundation.NSNumber, error: Swift.Error?)
+  @available(iOS 11.0, *)
+  @objc dynamic public func peripheral(_: CoreBluetooth.CBPeripheral, didOpen _: CoreBluetooth.CBL2CAPChannel?, error _: Swift.Error?)
+  @objc dynamic public func peripheral(_: CoreBluetooth.CBPeripheral, didModifyServices _: [CoreBluetooth.CBService])
+  @objc dynamic public func peripheral(_: CoreBluetooth.CBPeripheral, didDiscoverIncludedServicesFor _: CoreBluetooth.CBService, error _: Swift.Error?)
+  @objc dynamic public func peripheralIsReady(toSendWriteWithoutResponse _: CoreBluetooth.CBPeripheral)
+  @objc dynamic public func peripheralDidUpdateName(_: CoreBluetooth.CBPeripheral)
+}
+@objc @_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers open class OBPeripheralManager : ObjectiveC.NSObject {
+  public static var instance: onceBLE.OBPeripheralManager {
+    get
+  }
+  public func onReady(_ handler: @escaping (() -> Swift.Void))
+  @objc deinit
+}
+extension onceBLE.OBPeripheralManager {
+  public func startAdvertising(name: Swift.String)
+  public func stopAdvertising()
+  public func disconnect()
+}
+extension onceBLE.OBPeripheralManager : CoreBluetooth.CBPeripheralManagerDelegate {
+  @objc dynamic public func peripheralManager(_: CoreBluetooth.CBPeripheralManager, didReceiveWrite _: [CoreBluetooth.CBATTRequest])
+  @objc dynamic public func peripheralManager(_: CoreBluetooth.CBPeripheralManager, didReceiveRead _: CoreBluetooth.CBATTRequest)
+}
+extension onceBLE.OBPeripheralManager {
+  @objc dynamic public func peripheralManagerDidUpdateState(_ peripheralManager: CoreBluetooth.CBPeripheralManager)
+  @objc dynamic public func peripheralManagerDidStartAdvertising(_: CoreBluetooth.CBPeripheralManager, error _: Swift.Error?)
+  @objc dynamic public func peripheralManager(_: CoreBluetooth.CBPeripheralManager, didAdd _: CoreBluetooth.CBService, error _: Swift.Error?)
+  @objc dynamic public func peripheralManagerIsReady(toUpdateSubscribers _: CoreBluetooth.CBPeripheralManager)
+  @objc dynamic public func peripheralManager(_: CoreBluetooth.CBPeripheralManager, willRestoreState _: [Swift.String : Any])
+  @available(iOS 11.0, *)
+  @objc dynamic public func peripheralManager(_: CoreBluetooth.CBPeripheralManager, didOpen _: CoreBluetooth.CBL2CAPChannel?, error _: Swift.Error?)
+  @objc dynamic public func peripheralManager(_: CoreBluetooth.CBPeripheralManager, didPublishL2CAPChannel _: CoreBluetooth.CBL2CAPPSM, error _: Swift.Error?)
+  @objc dynamic public func peripheralManager(_: CoreBluetooth.CBPeripheralManager, didUnpublishL2CAPChannel _: CoreBluetooth.CBL2CAPPSM, error _: Swift.Error?)
+  @objc dynamic public func peripheralManager(_: CoreBluetooth.CBPeripheralManager, central _: CoreBluetooth.CBCentral, didSubscribeTo _: CoreBluetooth.CBCharacteristic)
+  @objc dynamic public func peripheralManager(_: CoreBluetooth.CBPeripheralManager, central _: CoreBluetooth.CBCentral, didUnsubscribeFrom _: CoreBluetooth.CBCharacteristic)
+}
+public protocol OBPeripheralTypeCheck {
+  static func isTypeMatchFor(advData: onceBLE.OBAdvertisementData, peripheral: CoreBluetooth.CBPeripheral) -> onceBLE.OBPeripheral?
+}
+public typealias OBScanFilter = (onceBLE.OBPeripheral, onceBLE.OBAdvertisementData) -> Swift.Bool
+public typealias PeripheralScanResultHandler = (onceBLE.OBPeripheral, onceBLE.OBAdvertisementData) -> Swift.Void
+public typealias ConnectionHandler = (onceBLE.OBPeripheral) -> Swift.Void
+public typealias DisconnectionHandler = (onceBLE.OBPeripheral) -> Swift.Void
+public typealias RegisteredTypeHandler = (Any, onceBLE.OBAdvertisementData) -> Swift.Void
+extension CoreBluetooth.CBCharacteristic {
+  public func dataBytes() -> [Swift.UInt8]
+  public func asciiString() -> Swift.String?
+}
+extension CoreBluetooth.CBDescriptor {
+  public func dataBytes() -> [Swift.UInt8]
+  public func asciiString() -> Swift.String?
+}
+extension onceBLE.OBCharacteristicProperty : Swift.Equatable {}
+extension onceBLE.OBCharacteristicProperty : Swift.Hashable {}
+extension onceBLE.OBCharacteristicProperty : Swift.RawRepresentable {}
+extension onceBLE.OBGattRole : Swift.Equatable {}
+extension onceBLE.OBGattRole : Swift.Hashable {}
+extension onceBLE.LogDataType : Swift.Equatable {}
+extension onceBLE.LogDataType : Swift.Hashable {}
+extension onceBLE.LogDataType : Swift.RawRepresentable {}
+extension onceBLE.OBDataLogger.LogDataCategory : Swift.Equatable {}
+extension onceBLE.OBDataLogger.LogDataCategory : Swift.Hashable {}
+extension onceBLE.OBError : Swift.Equatable {}
+extension onceBLE.OBError : Swift.Hashable {}
+extension onceBLE.OBError : Swift.RawRepresentable {}
+extension onceBLE.OBConnectionState : Swift.Equatable {}
+extension onceBLE.OBConnectionState : Swift.Hashable {}
