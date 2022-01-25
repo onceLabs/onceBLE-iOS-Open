@@ -8,6 +8,16 @@ import NordicDFU
 import Swift
 import _Concurrency
 @objc @_inheritsConvenienceInitializers public class OBCentral : ObjectiveC.NSObject {
+  @Combine.Published @_projectedValueProperty($bluetoothStatus) public var bluetoothStatus: CoreBluetooth.CBManagerState? {
+    get
+    set
+    _modify
+  }
+  public var $bluetoothStatus: Combine.Published<CoreBluetooth.CBManagerState?>.Publisher {
+    get
+    @available(iOS 14.0, tvOS 14.0, watchOS 7.0, macOS 11.0, *)
+    set
+  }
   @objc override dynamic public init()
   public static func register<T>(customPeripheralType _: T.Type) where T : onceBLE.OBPeripheralTypeCheck
   public func borrowCentral() -> CoreBluetooth.CBCentralManager?
