@@ -199,7 +199,6 @@ __swift_FORCE_LOAD_$_swiftDarwin_$_onceBLE
 __swift_FORCE_LOAD_$_swiftCoreFoundation_$_onceBLE
 __swift_FORCE_LOAD_$_swiftDispatch_$_onceBLE
 __swift_FORCE_LOAD_$_swiftCoreGraphics_$_onceBLE
-__swift_FORCE_LOAD_$_swiftCompression_$_onceBLE
 __swift_FORCE_LOAD_$_swiftCompatibility51_$_onceBLE
 __swift_FORCE_LOAD_$_swiftCompatibilityConcurrency_$_onceBLE
 _$sSoMXM
@@ -1052,209 +1051,7 @@ allowDuplicates.set
 allowDuplicates.get
 /Users/joebakalor/Desktop/Mobile/iOS/SwiftPackages/onceBLE/Sources/onceBLE/Core/DFU/Cypress/FileParser.swift
 /Users/joebakalor/Desktop/Mobile/iOS/SwiftPackages/onceBLE/Sources/onceBLE/Core/DFU/Cypress/OTAFile.swift
-_$s7onceBLE16NordicOTAServiceC11_logMessageSSvpACTK
-_$s7onceBLE16NordicOTAServiceC11_logMessageSSvpACTk
-_$s7onceBLE16NordicOTAServiceC11_logMessageSSvM.resume.0
-_$s7onceBLE16NordicOTAServiceCSSIetMAgYl_TC
-_$s7onceBLE16NordicOTAServiceC12$_logMessage7Combine9PublishedV9PublisherVySS_GvpACTK
-_$s7onceBLE16NordicOTAServiceC12$_logMessage7Combine9PublishedV9PublisherVySS_GvpACTk
-_$s7onceBLE16NordicOTAServiceC12$_logMessage7Combine9PublishedV9PublisherVySS_GvM.resume.0
-_$s7onceBLE16NordicOTAServiceC7Combine9PublishedV9PublisherVySS_GIetMAgYl_TC
-_$s7onceBLE16NordicOTAServiceC12_updateSpeedSdvpACTK
-_$s7onceBLE16NordicOTAServiceC12_updateSpeedSdvpACTk
-_$s7onceBLE16NordicOTAServiceCSdIetMAgYl_TC
-_$s7onceBLE16NordicOTAServiceC13$_updateSpeed7Combine9PublishedV9PublisherVySd_GvpACTK
-_$s7onceBLE16NordicOTAServiceC13$_updateSpeed7Combine9PublishedV9PublisherVySd_GvpACTk
-_$s7onceBLE16NordicOTAServiceC7Combine9PublishedV9PublisherVySd_GIetMAgYl_TC
-_$s7onceBLE16NordicOTAServiceC15_updateProgressSivpACTK
-_$s7onceBLE16NordicOTAServiceC15_updateProgressSivpACTk
-_$s7onceBLE16NordicOTAServiceCSiIetMAgYl_TC
-_$s7onceBLE16NordicOTAServiceC16$_updateProgress7Combine9PublishedV9PublisherVySi_GvpACTK
-_$s7onceBLE16NordicOTAServiceC16$_updateProgress7Combine9PublishedV9PublisherVySi_GvpACTk
-_$s7onceBLE16NordicOTAServiceC12$_logMessage7Combine9PublishedV9PublisherVySS_GvgTm
-_$s7onceBLE16NordicOTAServiceC12$_logMessage7Combine9PublishedV9PublisherVySS_GvsTm
-_$s7onceBLE16NordicOTAServiceC7Combine9PublishedV9PublisherVySi_GIetMAgYl_TC
-_$s7onceBLE16NordicOTAServiceC11serviceNameSSvpACTK
-_$s7onceBLE16NordicOTAServiceC11serviceNameSSvpACTk
-_$s7onceBLE16NordicOTAServiceC11serviceNameSSvM.resume.0
-_$s7onceBLE16NordicOTAServiceC7centralSo16CBCentralManagerCSgvpACTK
-_$s7onceBLE16NordicOTAServiceC7centralSo16CBCentralManagerCSgvpACTk
-_$s7onceBLE16NordicOTAServiceCSo16CBCentralManagerCSgIetMAgYl_TC
-_$s7onceBLE16NordicOTAServiceC18peripheralToUpdateSo12CBPeripheralCSgvpACTK
-_$s7onceBLE16NordicOTAServiceC18peripheralToUpdateSo12CBPeripheralCSgvpACTk
-_$s7onceBLE16NordicOTAServiceC18peripheralToUpdateSo12CBPeripheralCSgvM.resume.0
-_$s7onceBLE16NordicOTAServiceCSo12CBPeripheralCSgIetMAgYl_TC
-_$ss6UInt32VABSzsWl
-_$s7onceBLE16NordicOTAServiceCAA0D8ProviderA2aDP14updateProgress7Combine9PublishedV9PublisherVySi_GvgTW
-_$s7onceBLE16NordicOTAServiceCAA0D8ProviderA2aDP11updateSpeed7Combine9PublishedV9PublisherVySd_GvgTW
-_$s7onceBLE16NordicOTAServiceCAA0D8ProviderA2aDP10logMessage7Combine9PublishedV9PublisherVySS_GvgTW
-_$s7onceBLE16NordicOTAServiceCAA0D8ProviderA2aDP11serviceNameSSvgTW
-_$s7onceBLE16NordicOTAServiceCAA0D8ProviderA2aDP11serviceNameSSvsTW
-_$s7onceBLE16NordicOTAServiceCAA0D8ProviderA2aDP11serviceNameSSvMTW
-_$s7onceBLE16NordicOTAServiceCAA0D8ProviderA2aDP11serviceNameSSvMTW.resume.0
-_$s7onceBLE16NordicOTAServiceCAA0D8ProviderA2aDP17setCentralManager7centralySo09CBCentralH0C_tFTW
-_$s7onceBLE16NordicOTAServiceCAA0D8ProviderA2aDP13setPeripheral10peripheralySo12CBPeripheralC_tFTW
-_$s7onceBLE16NordicOTAServiceCAA0D8ProviderA2aDP10setOtaFile3urlSb10Foundation3URLV_tFTW
-_$s7onceBLE16NordicOTAServiceCAA0D8ProviderA2aDP5beginSbyFTW
-_$s7onceBLE16NordicOTAServiceCAA0D8ProviderA2aDP5resetyyFTW
-_$s7onceBLE16NordicOTAServiceC7logWith_7messagey0C3DFU8LogLevelO_SStFTo
-_$s7onceBLE16NordicOTAServiceC17dfuStateDidChange2toy0C3DFU8DFUStateO_tFTo
-_$s7onceBLE16NordicOTAServiceC8dfuError_19didOccurWithMessagey0C3DFU8DFUErrorO_SStFTo
-_$s7onceBLE16NordicOTAServiceC20dfuProgressDidChange3for5outOf2to26currentSpeedBytesPerSecond03avgnopQ0ySi_S2iS2dtFTo
-_$s7onceBLE16NordicOTAServiceC6select_17advertisementData4RSSI4hintSbSo12CBPeripheralC_SDySSyXlGSo8NSNumberCSSSgtFTo
-_$s7onceBLE16NordicOTAServiceC8filterBy4hintSaySo6CBUUIDCGSgAG_tFTo
-_$s7onceBLE16NordicOTAServiceC7logWith_7messagey0C3DFU8LogLevelO_SStFTf4dnn_n
-_$sS2iSzsWl
-_$s7onceBLE16NordicOTAServiceC6select_17advertisementData4RSSI4hintSbSo12CBPeripheralC_SDySSyXlGSo8NSNumberCSSSgtFTf4ndddd_n
-_$s7onceBLE16NordicOTAServiceCMU
-_$s7onceBLE16NordicOTAServiceCMr
-_$s7Combine9PublishedVySSGMa
-_$s7Combine9PublishedVySdGMa
-_$s7Combine9PublishedVySiGMa
-_$s7Combine9PublishedVySSGMaTm
-_$sxSSly7onceBLE16NordicOTAServiceCIsetWAlYl_TC
-_$s7onceBLE16NordicOTAServiceC12_updateSpeedSdvM.resume.0
-_$s7onceBLE16NordicOTAServiceC15_updateProgressSivM.resume.0
-_$s7onceBLE16NordicOTAServiceC13$_updateSpeed7Combine9PublishedV9PublisherVySd_GvM.resume.0
-_$s7onceBLE16NordicOTAServiceC16$_updateProgress7Combine9PublishedV9PublisherVySi_GvM.resume.0
-_$s7onceBLE16NordicOTAServiceC7centralSo16CBCentralManagerCSgvM.resume.0
-_symbolic _____ 7onceBLE16NordicOTAServiceC
-_symbolic SS
-_symbolic _____ySSG 7Combine9PublishedV
-_$s7onceBLE16NordicOTAServiceC12__logMessage33_7C3553CA9C982D895E584EAB54CF8127LL7Combine9PublishedVySSGvpWvd
-_$s7Combine9PublishedVySSGMD
-_symbolic _____ySS_G 7Combine9PublishedV9PublisherV
-_$s7Combine9PublishedV9PublisherVySS_GMD
-_symbolic _____ySdG 7Combine9PublishedV
-_$s7onceBLE16NordicOTAServiceC13__updateSpeed33_7C3553CA9C982D895E584EAB54CF8127LL7Combine9PublishedVySdGvpWvd
-_$s7Combine9PublishedVySdGMD
-_symbolic _____ySd_G 7Combine9PublishedV9PublisherV
-_$s7Combine9PublishedV9PublisherVySd_GMD
-_symbolic _____ySiG 7Combine9PublishedV
-_$s7onceBLE16NordicOTAServiceC16__updateProgress33_7C3553CA9C982D895E584EAB54CF8127LL7Combine9PublishedVySiGvpWvd
-_$s7Combine9PublishedVySiGMD
-_symbolic _____ySi_G 7Combine9PublishedV9PublisherV
-_$s7Combine9PublishedV9PublisherVySi_GMD
-_$ss6UInt32VABSzsWL
-_$s7onceBLE16NordicOTAServiceC9initiator33_7C3553CA9C982D895E584EAB54CF8127LL0C3DFU19DFUServiceInitiatorCSgvpWvd
-_$s7onceBLE16NordicOTAServiceC16selectedFirmware33_7C3553CA9C982D895E584EAB54CF8127LL0C3DFU11DFUFirmwareCSgvpWvd
-_$s7onceBLE16NordicOTAServiceC10otaProcess33_7C3553CA9C982D895E584EAB54CF8127LL0C3DFU20DFUServiceControllerCSgvpWvd
-_$sS2iSzsWL
-_symbolic _____ySo6CBUUIDCG s23_ContiguousArrayStorageC
-_$ss23_ContiguousArrayStorageCySo6CBUUIDCGMD
-__METACLASS_DATA__TtC7onceBLE16NordicOTAService
-__IVARS__TtC7onceBLE16NordicOTAService
-__DATA__TtC7onceBLE16NordicOTAService
-_$s7onceBLE16NordicOTAServiceCMl
-_$s7Combine9PublishedVySSGML
-_$s7Combine9PublishedVySdGML
-_$s7Combine9PublishedVySiGML
-_$s7onceBLE16NordicOTAServiceCMf
-_symbolic So12CBPeripheralCSgXw
-_symbolic _____Sg 9NordicDFU11DFUFirmwareC
-_symbolic _____Sg 9NordicDFU19DFUServiceInitiatorC
-_symbolic _____Sg 9NordicDFU20DFUServiceControllerC
-_$s7onceBLE16NordicOTAServiceCMF
-__CATEGORY_INSTANCE_METHODS__TtC7onceBLE16NordicOTAService_$_onceBLE
-__PROTOCOL__TtP9NordicDFU14LoggerDelegate_
-l_OBJC_LABEL_PROTOCOL_$__TtP9NordicDFU14LoggerDelegate_
-l_OBJC_PROTOCOL_REFERENCE_$__TtP9NordicDFU14LoggerDelegate_
-__PROTOCOL__TtP9NordicDFU18DFUServiceDelegate_
-l_OBJC_LABEL_PROTOCOL_$__TtP9NordicDFU18DFUServiceDelegate_
-l_OBJC_PROTOCOL_REFERENCE_$__TtP9NordicDFU18DFUServiceDelegate_
-__PROTOCOL__TtP9NordicDFU19DFUProgressDelegate_
-l_OBJC_LABEL_PROTOCOL_$__TtP9NordicDFU19DFUProgressDelegate_
-l_OBJC_PROTOCOL_REFERENCE_$__TtP9NordicDFU19DFUProgressDelegate_
-__PROTOCOL__TtP9NordicDFU29DFUPeripheralSelectorDelegate_
-l_OBJC_LABEL_PROTOCOL_$__TtP9NordicDFU29DFUPeripheralSelectorDelegate_
-l_OBJC_PROTOCOL_REFERENCE_$__TtP9NordicDFU29DFUPeripheralSelectorDelegate_
-__CATEGORY_PROTOCOLS__TtC7onceBLE16NordicOTAService_$_onceBLE
-__CATEGORY__TtC7onceBLE16NordicOTAService_$_onceBLE
-__PROTOCOL_INSTANCE_METHODS__TtP9NordicDFU14LoggerDelegate_
-__PROTOCOL_METHOD_TYPES__TtP9NordicDFU14LoggerDelegate_
-__PROTOCOL_INSTANCE_METHODS__TtP9NordicDFU18DFUServiceDelegate_
-__PROTOCOL_METHOD_TYPES__TtP9NordicDFU18DFUServiceDelegate_
-__PROTOCOL_INSTANCE_METHODS__TtP9NordicDFU19DFUProgressDelegate_
-__PROTOCOL_METHOD_TYPES__TtP9NordicDFU19DFUProgressDelegate_
-__PROTOCOL_INSTANCE_METHODS__TtP9NordicDFU29DFUPeripheralSelectorDelegate_
-__PROTOCOL_METHOD_TYPES__TtP9NordicDFU29DFUPeripheralSelectorDelegate_
--private-discriminator _7C3553CA9C982D895E584EAB54CF8127
 /Users/joebakalor/Desktop/Mobile/iOS/SwiftPackages/onceBLE/Sources/onceBLE/Core/DFU/Nordic/NordicOTAService.swift
-$s7Combine9PublishedVySSGMa
-$s7onceBLE16NordicOTAServiceCMr
-$s7onceBLE16NordicOTAServiceCMa
-$s7onceBLE16NordicOTAServiceCMU
-select
-$sS2iSzsWl
-logWith
-filterBy
-$sSa13_adoptStorage_5countSayxG_SpyxGts016_ContiguousArrayB0CyxGn_SitFZSo6CBUUIDC_Tg5
-$ss22_ContiguousArrayBufferV19firstElementAddressSpyxGvgSo6CBUUIDC_Tg5
-$ss22_ContiguousArrayBufferV5count7storageAByxGSi_s01_aB7StorageCyxGtcfCSo6CBUUIDC_Tg5
-$ss22_ContiguousArrayBufferV18_initStorageHeader5count8capacityySi_SitFSo6CBUUIDC_Tg5
-dfuProgressDidChange
-$sSds20TextOutputStreamablessAAP5write2toyqd__z_ts0aB6StreamRd__lFTWs26DefaultStringInterpolationV_Tg5
-$sSis23CustomStringConvertiblessAAP11descriptionSSvgTW
-dfuError
-dfuStateDidChange
-reset
-begin
-setOtaFile
-setPeripheral
-setCentralManager
-serviceName.modify
-serviceName.set
-serviceName.get
-logMessage.get
-updateSpeed.get
-updateProgress.get
-$s7onceBLE16NordicOTAServiceC15_updateProgressSivpfP
-$s7onceBLE16NordicOTAServiceC12_updateSpeedSdvpfP
-$s7onceBLE16NordicOTAServiceC11_logMessageSSvpfP
-$ss6UInt32VABSzsWl
-$ss6UInt32Vs23CustomStringConvertiblessACP11descriptionSSvgTW
-peripheralToUpdate.modify
-peripheralToUpdate.set
-peripheralToUpdate.get
-$s7onceBLE16NordicOTAServiceC18peripheralToUpdateSo12CBPeripheralCSgvpACTk
-$s7onceBLE16NordicOTAServiceC18peripheralToUpdateSo12CBPeripheralCSgvpACTK
-central.modify
-central.set
-central.get
-$s7onceBLE16NordicOTAServiceC7centralSo16CBCentralManagerCSgvpACTk
-$s7onceBLE16NordicOTAServiceC7centralSo16CBCentralManagerCSgvpACTK
-$s7onceBLE16NordicOTAServiceC11serviceNameSSvpACTk
-$s7onceBLE16NordicOTAServiceC11serviceNameSSvpACTK
-$_updateProgress.modify
-$_updateProgress.get
-$_updateProgress.set
-$_logMessage.set
-$_logMessage.get
-$s7onceBLE16NordicOTAServiceC16$_updateProgress7Combine9PublishedV9PublisherVySi_GvpACTk
-$s7onceBLE16NordicOTAServiceC16$_updateProgress7Combine9PublishedV9PublisherVySi_GvpACTK
-_updateProgress.modify
-_updateProgress.set
-_updateProgress.get
-$s7onceBLE16NordicOTAServiceC15_updateProgressSivpACTk
-$s7onceBLE16NordicOTAServiceC15_updateProgressSivpACTK
-$_updateSpeed.modify
-$_updateSpeed.get
-$_updateSpeed.set
-$s7onceBLE16NordicOTAServiceC13$_updateSpeed7Combine9PublishedV9PublisherVySd_GvpACTk
-$s7onceBLE16NordicOTAServiceC13$_updateSpeed7Combine9PublishedV9PublisherVySd_GvpACTK
-_updateSpeed.modify
-_updateSpeed.set
-_updateSpeed.get
-$s7onceBLE16NordicOTAServiceC12_updateSpeedSdvpACTk
-$s7onceBLE16NordicOTAServiceC12_updateSpeedSdvpACTK
-$_logMessage.modify
-$s7onceBLE16NordicOTAServiceC12$_logMessage7Combine9PublishedV9PublisherVySS_GvpACTk
-$s7onceBLE16NordicOTAServiceC12$_logMessage7Combine9PublishedV9PublisherVySS_GvpACTK
-_logMessage.modify
-_logMessage.set
-_logMessage.get
-$s7onceBLE16NordicOTAServiceC11_logMessageSSvpACTk
-$s7onceBLE16NordicOTAServiceC11_logMessageSSvpACTK
 _$s7onceBLE26nordicLegacyDfuServiceUUID_WZ
 _$s7onceBLE26nordicSecureDfuServiceUUID_WZ
 /Users/joebakalor/Desktop/Mobile/iOS/SwiftPackages/onceBLE/Sources/onceBLE/Core/DFU/Nordic/NordicUUIDs.swift
@@ -1273,9 +1070,7 @@ $s7onceBLE11OTAProviderOMa
 checkOtaSupport
 $s7onceBLE23SERVICE_UUID_TELINK_OTASo6CBUUIDCvau
 Sources/onceBLE/Core/DFU/Telink/TelinkOtaConstants.swift
-Sources/onceBLE/Core/DFU/Nordic/NordicUUIDs.swift
 Sources/onceBLE/Core/DFU/Telink/TelinkOTAService.swift
-Sources/onceBLE/Core/DFU/Nordic/NordicOTAService.swift
 _$s7onceBLE17TelinkCommandTypeOSQAASQ2eeoiySbx_xtFZTW
 _$s7onceBLE17TelinkCommandTypeOSHAASH9hashValueSivgTW
 _$s7onceBLE17TelinkCommandTypeOSHAASH4hash4intoys6HasherVz_tFTW
@@ -1375,6 +1170,10 @@ _$s10Foundation4DataVyACxcSTRzs5UInt8V7ElementRtzlufCSayAEG_Tg5Tf4nd_n
 _$s7onceBLE21TelinkOtaPacketParserC8firmwareACSays5UInt8VG_tcfcTf4gn_n
 _$s7onceBLE16TelinkOTAServiceCMU
 _$s7onceBLE16TelinkOTAServiceCMr
+_$s7Combine9PublishedVySSGMa
+_$s7Combine9PublishedVySdGMa
+_$s7Combine9PublishedVySiGMa
+_$s7Combine9PublishedVySSGMaTm
 _$sxSSly7onceBLE16TelinkOTAServiceCIsetWAlYl_TC
 _$s7onceBLE16TelinkOTAServiceC10peripheral_17didUpdateValueFor5errorySo12CBPeripheralC_So16CBCharacteristicCs5Error_pSgtFTo
 _$s7onceBLE16TelinkOTAServiceC10peripheral_29didUpdateNotificationStateFor5errorySo12CBPeripheralC_So16CBCharacteristicCs5Error_pSgtFTo
@@ -1383,9 +1182,22 @@ _$s7onceBLE16TelinkOTAServiceC15_updateProgressSivM.resume.0
 _$s7onceBLE16TelinkOTAServiceC13$_updateSpeed7Combine9PublishedV9PublisherVySd_GvM.resume.0
 _$s7onceBLE16TelinkOTAServiceC16$_updateProgress7Combine9PublishedV9PublisherVySi_GvM.resume.0
 _symbolic _____ 7onceBLE16TelinkOTAServiceC
+_symbolic SS
+_symbolic _____ySSG 7Combine9PublishedV
 _$s7onceBLE16TelinkOTAServiceC12__logMessage33_5EEEBDBD8DA3DC6DF6C3EFA63A368131LL7Combine9PublishedVySSGvpWvd
+_$s7Combine9PublishedVySSGMD
+_symbolic _____ySS_G 7Combine9PublishedV9PublisherV
+_$s7Combine9PublishedV9PublisherVySS_GMD
+_symbolic _____ySdG 7Combine9PublishedV
 _$s7onceBLE16TelinkOTAServiceC13__updateSpeed33_5EEEBDBD8DA3DC6DF6C3EFA63A368131LL7Combine9PublishedVySdGvpWvd
+_$s7Combine9PublishedVySdGMD
+_symbolic _____ySd_G 7Combine9PublishedV9PublisherV
+_$s7Combine9PublishedV9PublisherVySd_GMD
+_symbolic _____ySiG 7Combine9PublishedV
 _$s7onceBLE16TelinkOTAServiceC16__updateProgress33_5EEEBDBD8DA3DC6DF6C3EFA63A368131LL7Combine9PublishedVySiGvpWvd
+_$s7Combine9PublishedVySiGMD
+_symbolic _____ySi_G 7Combine9PublishedV9PublisherV
+_$s7Combine9PublishedV9PublisherVySi_GMD
 _$s7onceBLE16TelinkOTAServiceC17otaCharacteristic33_5EEEBDBD8DA3DC6DF6C3EFA63A368131LLSo16CBCharacteristicCSgvpWvd
 _$sSo16CBCharacteristicCML
 _$s7onceBLE16TelinkOTAServiceC12packetParser33_5EEEBDBD8DA3DC6DF6C3EFA63A368131LLAA0c9OtaPacketF0CSgvpWvd
@@ -1397,10 +1209,14 @@ __INSTANCE_METHODS__TtC7onceBLE16TelinkOTAService
 __IVARS__TtC7onceBLE16TelinkOTAService
 __DATA__TtC7onceBLE16TelinkOTAService
 _$s7onceBLE16TelinkOTAServiceCMl
+_$s7Combine9PublishedVySSGML
+_$s7Combine9PublishedVySdGML
+_$s7Combine9PublishedVySiGML
 _$s7onceBLE16TelinkOTAServiceCMf
 _symbolic _____Sg 7onceBLE16TelinkOtaCommandV
 _symbolic _____Sg 7onceBLE21TelinkOtaPacketParserC
 _symbolic So16CBCharacteristicCSg
+_symbolic So12CBPeripheralCSgXw
 _$s7onceBLE16TelinkOTAServiceCMF
 __CATEGORY_INSTANCE_METHODS__TtC7onceBLE16TelinkOTAService_$_onceBLE
 __PROTOCOL_CBPeripheralDelegate
@@ -1413,6 +1229,7 @@ __PROTOCOL_INSTANCE_METHODS_OPT_CBPeripheralDelegate
 __PROTOCOL_METHOD_TYPES_CBPeripheralDelegate
 -private-discriminator _5EEEBDBD8DA3DC6DF6C3EFA63A368131
 /Users/joebakalor/Desktop/Mobile/iOS/SwiftPackages/onceBLE/Sources/onceBLE/Core/DFU/Telink/TelinkOTAService.swift
+$s7Combine9PublishedVySSGMa
 $s7onceBLE16TelinkOTAServiceCMr
 $s7onceBLE16TelinkOTAServiceCMU
 $s7onceBLE16TelinkOTAServiceCMa
@@ -1436,6 +1253,17 @@ disableOtaNotifications
 otaCharacteristic.get
 enableOtaNotifications
 workingCommand.set
+reset
+begin
+setOtaFile
+setPeripheral
+setCentralManager
+serviceName.modify
+serviceName.set
+serviceName.get
+logMessage.get
+updateSpeed.get
+updateProgress.get
 $s7onceBLE16TelinkOTAServiceCfETo
 $s7onceBLE16TelinkOTAServiceC15_updateProgressSivpfP
 $s7onceBLE16TelinkOTAServiceC12_updateSpeedSdvpfP
@@ -1484,20 +1312,41 @@ $sSayxGSlsSl10startIndex0B0QzvgTWSo9CBServiceC_Tg5
 $sSa10startIndexSivgSo9CBServiceC_Tg5
 $sSa9_getCountSiyFSo9CBServiceC_Tg5
 $ss12_ArrayBufferV14immutableCountSivgSo9CBServiceC_Tg5
+peripheralToUpdate.modify
+peripheralToUpdate.set
+peripheralToUpdate.get
 $s7onceBLE16TelinkOTAServiceC18peripheralToUpdateSo12CBPeripheralCSgvpACTk
 $s7onceBLE16TelinkOTAServiceC18peripheralToUpdateSo12CBPeripheralCSgvpACTK
 $s7onceBLE16TelinkOTAServiceC11serviceNameSSvpACTk
 $s7onceBLE16TelinkOTAServiceC11serviceNameSSvpACTK
+$_updateProgress.modify
+$_updateProgress.get
+$_updateProgress.set
+$_logMessage.set
+$_logMessage.get
 $s7onceBLE16TelinkOTAServiceC16$_updateProgress7Combine9PublishedV9PublisherVySi_GvpACTk
 $s7onceBLE16TelinkOTAServiceC16$_updateProgress7Combine9PublishedV9PublisherVySi_GvpACTK
+_updateProgress.modify
+_updateProgress.set
+_updateProgress.get
 $s7onceBLE16TelinkOTAServiceC15_updateProgressSivpACTk
 $s7onceBLE16TelinkOTAServiceC15_updateProgressSivpACTK
+$_updateSpeed.modify
+$_updateSpeed.get
+$_updateSpeed.set
 $s7onceBLE16TelinkOTAServiceC13$_updateSpeed7Combine9PublishedV9PublisherVySd_GvpACTk
 $s7onceBLE16TelinkOTAServiceC13$_updateSpeed7Combine9PublishedV9PublisherVySd_GvpACTK
+_updateSpeed.modify
+_updateSpeed.set
+_updateSpeed.get
 $s7onceBLE16TelinkOTAServiceC12_updateSpeedSdvpACTk
 $s7onceBLE16TelinkOTAServiceC12_updateSpeedSdvpACTK
+$_logMessage.modify
 $s7onceBLE16TelinkOTAServiceC12$_logMessage7Combine9PublishedV9PublisherVySS_GvpACTk
 $s7onceBLE16TelinkOTAServiceC12$_logMessage7Combine9PublishedV9PublisherVySS_GvpACTK
+_logMessage.modify
+_logMessage.set
+_logMessage.get
 $s7onceBLE16TelinkOTAServiceC11_logMessageSSvpACTk
 $s7onceBLE16TelinkOTAServiceC11_logMessageSSvpACTK
 _$s7onceBLE16TelinkOtaCommandV4typeAA0cE4TypeOvM.resume.0
@@ -1815,10 +1664,10 @@ value.set
 value.get
 $s7onceBLE16OBCharacteristicC5value10Foundation4DataVSgvpACTk
 $s7onceBLE16OBCharacteristicC5value10Foundation4DataVSgvpACTK
-_$ss2eeoiySbx_xtSYRzSQ8RawValueRpzlF7onceBLE24OBCharacteristicPropertyO_TB5
 _$s7onceBLE24OBCharacteristicPropertyOSQAASQ2eeoiySbx_xtFZTW
 _$s7onceBLE24OBCharacteristicPropertyOSHAASQWb
 _$s7onceBLE24OBCharacteristicPropertyOACSQAAWl
+_$ss2eeoiySbx_xtSYRzSQ8RawValueRpzlF7onceBLE24OBCharacteristicPropertyO_TB5
 _$s7onceBLE24OBCharacteristicPropertyOSHAASH9hashValueSivgTW
 _$sSYsSHRzSH8RawValueSYRpzrlE04hashB0Sivg7onceBLE24OBCharacteristicPropertyO_TB5
 _$s7onceBLE24OBCharacteristicPropertyOSHAASH4hash4intoys6HasherVz_tFTW
@@ -2482,6 +2331,7 @@ _$s7onceBLE19OBAdvertisementDataVSdSgIetMAlYl_TC
 _$s7onceBLE19OBAdvertisementDataVSSIetMAlYl_TC
 _$s7onceBLE19OBAdvertisementDataV10Foundation4UUIDVIetMAlYl_TC
 _$s10Foundation4UUIDVACs23CustomStringConvertibleAAWl
+_$sS2iSzsWl
 _$sSo6NSDataCMa
 _$sSo8NSNumberCMaTm
 _$sSo6CBUUIDCSo8NSObjectCSH10ObjectiveCWl
@@ -2519,6 +2369,7 @@ _$sSaySo6CBUUIDCGMD
 _symbolic SDySo6CBUUIDCSo6NSDataCG
 _$sSDySo6CBUUIDCSo6NSDataCGMD
 _$s10Foundation4UUIDVACs23CustomStringConvertibleAAWL
+_$sS2iSzsWL
 _$sSo6NSDataCML
 _$sSo6CBUUIDCSo8NSObjectCSH10ObjectiveCWL
 _$s7onceBLE19OBAdvertisementDataVs23CustomStringConvertibleAAMcMK
@@ -2575,6 +2426,7 @@ $s7onceBLE15OBAdvertisementOwxx
 $s7onceBLE15OBAdvertisementOwCP
 $sSo6CBUUIDCSo8NSObjectCSH10ObjectiveCWl
 $sSo8NSNumberCMa
+$sS2iSzsWl
 $s10Foundation4DateVSgWOb
 $s10Foundation4DateVSgWOc
 $sSayxG10Foundation15ContiguousBytesABs5UInt8VRszlAbCP010withUnsafeC0yqd__qd__SWKXEKlFTWAB4DataV15_RepresentationO_Tg5
@@ -2612,6 +2464,8 @@ $ss22__RawDictionaryStorageC4findys10_HashTableV6BucketV6bucket_Sb5foundtxSHRzlF
 $ss22__RawDictionaryStorageC4findys10_HashTableV6BucketV6bucket_Sb5foundtxSHRzlFSS_Tg5
 $ss22__RawDictionaryStorageC4findys10_HashTableV6BucketV6bucket_Sb5foundtxSHRzlFSi_Tg5
 $ss22__RawDictionaryStorageC4findys10_HashTableV6BucketV6bucket_Sb5foundtxSHRzlF10Foundation4UUIDV_Tg5
+$sSds20TextOutputStreamablessAAP5write2toyqd__z_ts0aB6StreamRd__lFTWs26DefaultStringInterpolationV_Tg5
+$sSis23CustomStringConvertiblessAAP11descriptionSSvgTW
 $sSayxGs23CustomStringConvertiblessABP11descriptionSSvgTWSo6CBUUIDC_Tg5
 $sSDyxq_Gs23CustomStringConvertiblessABP11descriptionSSvgTWSo6CBUUIDC_So6NSDataCTg5
 $s10Foundation4DataVs23CustomStringConvertibleAAsADP11descriptionSSvgTW
@@ -3271,6 +3125,7 @@ $ss12_ArrayBufferV7_natives011_ContiguousaB0VyxGvgSo12CBDescriptorC_Tg5
 $ss12_ArrayBufferV10_nonNatives06_CocoaA7WrapperVvgSo12CBDescriptorC_Tg5
 $ss12_ArrayBufferV9_isNativeSbvgSo12CBDescriptorC_Tg5
 $s7onceBLE12OBPeripheralC10peripheral_19didDiscoverServicesySo12CBPeripheralC_s5Error_pSgtFySo9CBServiceCXEfU0_
+Sources/onceBLE/Core/DFU/OTAProvider.swift
 centralConnected
 $s7onceBLE12OBPeripheralC16centralConnectedyyFySo7NSTimerCcfU_
 beginRssiUpdates
@@ -3321,6 +3176,7 @@ mockID.modify
 mockID.set
 $s7onceBLE12OBPeripheralC6mockID10Foundation4UUIDVSgvpACTk
 $s7onceBLE12OBPeripheralC6mockID10Foundation4UUIDVSgvpACTK
+central.modify
 gatt.set
 gatt.get
 $s7onceBLE12OBPeripheralC7centralSo16CBCentralManagerCSgvpACTk
@@ -3749,3 +3605,177 @@ Sources/swiftlang/swiftlang-1300.0.47.5/swift/stdlib/toolchain/CompatibilityConc
 swift_getFunctionTypeMetadataGlobalActorBackDeploy
 Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS15.2.sdk/usr/include/dispatch/once.h
 /AppleInternal/BuildRoot
+__ZN5swift17getRootSuperclassEv
+__ZN5swift4LazyIN12_GLOBAL__N_116ConformanceStateEE19defaultInitCallbackEPv
+__ZN12_GLOBAL__N_124searchInConformanceCacheEPKN5swift14TargetMetadataINS0_9InProcessEEEPKNS0_24TargetProtocolDescriptorIS2_EE
+__ZN12_GLOBAL__N_116ConformanceState12cacheFailureEPKvPKN5swift24TargetProtocolDescriptorINS3_9InProcessEEEm
+__ZZZL20getObjCClassMetadataPKN5swift19TargetClassMetadataINS_9InProcessEEEENK3$_1clEvENUlPvE_8__invokeES6_
+__ZZZN5swift17getRootSuperclassEvENK3$_0clEvENUlPvE_8__invokeES1_
+__ZZZL24getTypeContextDescriptorPKN5swift14TargetMetadataINS_9InProcessEEEENK3$_2clEvENUlPvE_8__invokeES6_
+__ZL17swift_unreachablePKc
+__ZZZL26getExistentialTypeMetadataN5swift23ProtocolClassConstraintEPKNS_14TargetMetadataINS_9InProcessEEEmPKNS_27TargetProtocolDescriptorRefIS2_EEENK3$_3clEvENUlPvE_8__invokeESB_
+__ZN12_GLOBAL__N_122override_equalContextsEPKN5swift23TargetContextDescriptorINS0_9InProcessEEES5_
+__ZN12_GLOBAL__N_116addImageCallbackEPK11mach_header
+__ZN12_GLOBAL__N_116addImageCallbackEPK11mach_headerl
+__ZN12_GLOBAL__N_112ConformancesE
+__ZZZL20getObjCClassMetadataPKN5swift19TargetClassMetadataINS_9InProcessEEEENK3$_1clEvE7TheLazy
+__ZZZN5swift17getRootSuperclassEvENK3$_0clEvE7TheLazy
+__ZZZL24getTypeContextDescriptorPKN5swift14TargetMetadataINS_9InProcessEEEENK3$_2clEvE7TheLazy
+__ZZZL26getExistentialTypeMetadataN5swift23ProtocolClassConstraintEPKNS_14TargetMetadataINS_9InProcessEEEmPKNS_27TargetProtocolDescriptorRefIS2_EEENK3$_3clEvE7TheLazy
+/AppleInternal/BuildRoot/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang --driver-mode=g++ -D CMARK_STATIC_DEFINE -D GTEST_HAS_RTTI=0 -D SWIFT_INLINE_NAMESPACE=__runtime -D __STDC_CONSTANT_MACROS -D __STDC_FORMAT_MACROS -D __STDC_LIMIT_MACROS -I stdlib/toolchain/Compatibility51 -I /AppleInternal/BuildRoot/Library/Caches/com.apple.xbs/Sources/swiftlang/swiftlang-1300.0.47.5/swift/stdlib/toolchain/Compatibility51 -I /AppleInternal/BuildRoot/Library/Caches/com.apple.xbs/Sources/swiftlang/swiftlang-1300.0.47.5/swift/stdlib/include -I include -I /AppleInternal/BuildRoot/Library/Caches/com.apple.xbs/Sources/swiftlang/swiftlang-1300.0.47.5/swift/include -I /AppleInternal/BuildRoot/Library/Caches/com.apple.xbs/Sources/swiftlang/swiftlang-1300.0.47.5/llvm-project/llvm/include -I /AppleInternal/BuildRoot/Library/Caches/com.apple.xbs/Binaries/swiftlang/install/TempContent/Objects/BNI_Xcode/llvm-macosx-x86_64/include -I /AppleInternal/BuildRoot/Library/Caches/com.apple.xbs/Sources/swiftlang/swiftlang-1300.0.47.5/llvm-project/clang/include -I /AppleInternal/BuildRoot/Library/Caches/com.apple.xbs/Binaries/swiftlang/install/TempContent/Objects/BNI_Xcode/llvm-macosx-x86_64/tools/clang/include -I /AppleInternal/BuildRoot/Library/Caches/com.apple.xbs/Sources/swiftlang/swiftlang-1300.0.47.5/cmark/src -I /AppleInternal/BuildRoot/Library/Caches/com.apple.xbs/Binaries/swiftlang/install/TempContent/Objects/BNI_Xcode/cmark-macosx-x86_64/src -Wno-unknown-warning-option -Werror=unguarded-availability-new -fno-stack-protector -fPIC -fvisibility-inlines-hidden -Werror=date-time -Werror=unguarded-availability-new -Wall -Wextra -Wno-unused-parameter -Wwrite-strings -Wcast-qual -Wmissing-field-initializers -Wimplicit-fallthrough -Wcovered-switch-default -Wno-class-memaccess -Wno-noexcept-type -Wnon-virtual-dtor -Wdelete-non-virtual-dtor -Wsuggest-override -Wstring-conversion -fdiagnostics-color -Werror=switch -Wdocumentation -Wimplicit-fallthrough -Wunreachable-code -Woverloaded-virtual -D OBJC_OLD_DISPATCH_PROTOTYPES=0 -O2 -D NDEBUG -arch arm64 -isysroot /AppleInternal/BuildRoot/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.1.sdk -fno-exceptions -funwind-tables -fno-rtti -Werror=gnu -Wall -Wglobal-constructors -Wexit-time-destructors -D SWIFT_COMPATIBILITY_LIBRARY=1 -D SWIFT_TARGET_LIBRARY_NAME=swiftCompatibility51 -fembed-bitcode=all --target=arm64-apple-ios7.0 -isysroot /AppleInternal/BuildRoot/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS15.2.sdk -arch arm64 -F/AppleInternal/BuildRoot/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS15.2.sdk/../../../Developer/Library/Frameworks -F/AppleInternal/BuildRoot/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS15.2.sdk/../../../Developer/AppleInternal/Library/Frameworks -O2 -g -D NDEBUG -D SWIFT_LIBRARY_EVOLUTION=0 -D SWIFT_RUNTIME_OS_VERSIONING -std=c++14 -MD -MT stdlib/toolchain/Compatibility51/CMakeFiles/swiftCompatibility51-iphoneos-arm64.dir/ProtocolConformance.cpp.o -MF stdlib/toolchain/Compatibility51/CMakeFiles/swiftCompatibility51-iphoneos-arm64.dir/ProtocolConformance.cpp.o.d -o stdlib/toolchain/Compatibility51/CMakeFiles/swiftCompatibility51-iphoneos-arm64.dir/ProtocolConformance.cpp.o -c /AppleInternal/BuildRoot/Library/Caches/com.apple.xbs/Sources/swiftlang/swiftlang-1300.0.47.5/swift/stdlib/toolchain/Compatibility51/ProtocolConformance.cpp -Wno-reorder-init-list -Wno-implicit-int-float-conversion -Wno-c99-designator -Wno-final-dtor-non-final-class -Wno-extra-semi-stmt -Wno-misleading-indentation -Wno-quoted-include-in-framework-header -Wno-enum-enum-conversion -Wno-enum-float-conversion -Wno-elaborated-enum-base -Xclang -clang-vendor-feature=+nullptrToBoolConversion -Xclang -clang-vendor-feature=+messageToSelfInClassMethodIdReturnType -Xclang -clang-vendor-feature=+disableInferNewAvailabilityFromInit -Xclang -clang-vendor-feature=+disableNeonImmediateRangeCheck -Xclang -clang-vendor-feature=+disableNonDependentMemberExprInCurrentInstantiation -Xclang -fno-odr-hash-protocols -Xclang -clang-vendor-feature=+revert09abecef7bbf -mlinker-version=711 -stdlib=libc++
+/AppleInternal/BuildRoot/Library/Caches/com.apple.xbs/Sources/swiftlang/swiftlang-1300.0.47.5/swift/stdlib/toolchain/Compatibility51/ProtocolConformance.cpp
+addImageCallback
+Sources/swiftlang/swiftlang-1300.0.47.5/swift/stdlib/toolchain/Compatibility51/ProtocolConformance.cpp
+push_back
+Sources/swiftlang/swiftlang-1300.0.47.5/swift/stdlib/toolchain/Compatibility51/Concurrent.h
+~scope_exit
+Sources/swiftlang/swiftlang-1300.0.47.5/llvm-project/llvm/include/llvm/ADT/ScopeExit.h
+operator()
+deallocateFreeList
+clear_and_shrink_to_fit
+deallocate
+llvm.loop.mustprogress
+operator unsigned long
+Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS15.2.sdk/usr/include/c++/v1/atomic
+load
+__cxx_atomic_load<unsigned long>
+end
+store
+__cxx_atomic_store<unsigned long>
+data
+__cxx_atomic_store<swift::overrides::ConcurrentReadableArray<(anonymous namespace)::ConformanceSection>::Storage *>
+copy<(anonymous namespace)::ConformanceSection *, (anonymous namespace)::ConformanceSection *>
+Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS15.2.sdk/usr/include/c++/v1/algorithm
+__copy<(anonymous namespace)::ConformanceSection, (anonymous namespace)::ConformanceSection>
+allocate
+max<unsigned long>
+max<unsigned long, std::__less<unsigned long> >
+__cxx_atomic_load<swift::overrides::ConcurrentReadableArray<(anonymous namespace)::ConformanceSection>::Storage *>
+override_equalContexts
+operator==
+Sources/swiftlang/swiftlang-1300.0.47.5/swift/stdlib/include/llvm/ADT/StringRef.h
+equals
+compareMemory
+getTypeContextIdentity
+empty
+StringRef
+strLen
+operator[]
+hasImportInfo
+Sources/swiftlang/swiftlang-1300.0.47.5/swift/include/swift/ABI/MetadataValues.h
+getFlag<2>
+Sources/swiftlang/swiftlang-1300.0.47.5/swift/include/swift/Basic/FlagSet.h
+get
+Sources/swiftlang/swiftlang-1300.0.47.5/swift/include/swift/Basic/RelativePointer.h
+applyRelativeOffset<const swift::RelativeDirectPointerImpl<const char, false, int>, int>
+applyRelativeOffset<const swift::RelativeIndirectablePointer<const swift::TargetContextDescriptor<swift::InProcess>, true, int, swift::TargetContextDescriptor<swift::InProcess> *>, int>
+isUnique
+Sources/swiftlang/swiftlang-1300.0.47.5/swift/include/swift/ABI/Metadata.h
+__invoke
+swift_unreachable
+Sources/swiftlang/swiftlang-1300.0.47.5/swift/include/swift/Basic/Unreachable.h
+cacheFailure
+updateFailureGeneration
+getOrInsert<(anonymous namespace)::ConformanceCacheKey, const swift::TargetProtocolConformanceDescriptor<swift::InProcess> *, unsigned long &>
+__cxx_atomic_store<swift::overrides::ConcurrentMapBase<(anonymous namespace)::ConformanceCacheEntry, false>::Node *>
+atomic_compare_exchange_strong_explicit<swift::overrides::ConcurrentMapBase<(anonymous namespace)::ConformanceCacheEntry, false>::Node *>
+compare_exchange_strong
+__cxx_atomic_compare_exchange_strong<swift::overrides::ConcurrentMapBase<(anonymous namespace)::ConformanceCacheEntry, false>::Node *>
+Node<(anonymous namespace)::ConformanceCacheKey &, const swift::TargetProtocolConformanceDescriptor<swift::InProcess> *, unsigned long &>
+ConformanceCacheEntry
+atomic
+__atomic_base
+__cxx_atomic_impl
+__cxx_atomic_base_impl
+destroyNode
+compareWithKey
+__cxx_atomic_load<swift::overrides::ConcurrentMapBase<(anonymous namespace)::ConformanceCacheEntry, false>::Node *>
+searchInConformanceCache
+cacheMiss
+cachedFailure
+_swiftoverride_class_getSuperclass
+getObjCClassMetadata
+Sources/swiftlang/swiftlang-1300.0.47.5/swift/include/swift/Basic/Lazy.h
+dyn_cast<swift::TargetForeignClassMetadata<swift::InProcess>, const swift::TargetMetadata<swift::InProcess> >
+Sources/swiftlang/swiftlang-1300.0.47.5/swift/stdlib/include/llvm/Support/Casting.h
+isa<swift::TargetForeignClassMetadata<swift::InProcess>, const swift::TargetMetadata<swift::InProcess> *>
+doit
+classof
+getKind
+getEnumeratedMetadataKind
+classHasSuperclass
+Sources/swiftlang/swiftlang-1300.0.47.5/swift/stdlib/toolchain/Compatibility51/../../public/runtime/Private.h
+getClassObject
+cachedSuccess
+getDescription
+__cxx_atomic_load<const swift::TargetProtocolConformanceDescriptor<swift::InProcess> *>
+isSuccessful
+findCached
+find<(anonymous namespace)::ConformanceCacheKey>
+getConformanceCacheTypeKey
+getTypeContextDescriptor
+~Snapshot
+decrementReaders
+fetch_sub
+__cxx_atomic_fetch_sub<unsigned long>
+snapshot
+incrementReaders
+fetch_add
+__cxx_atomic_fetch_add<unsigned long>
+getFailureGeneration
+defaultInitCallback
+ConformanceState
+initializeProtocolConformanceLookup
+ConcurrentReadableArray
+MiniVector
+swift51override_conformsToSwiftProtocol
+cacheSuccess
+makeSuccessful
+__cxx_atomic_store<const swift::TargetProtocolConformanceDescriptor<swift::InProcess> *>
+getOrInsert<(anonymous namespace)::ConformanceCacheKey, const swift::TargetProtocolConformanceDescriptor<swift::InProcess> *&, int>
+Node<(anonymous namespace)::ConformanceCacheKey &, const swift::TargetProtocolConformanceDescriptor<swift::InProcess> *&, int>
+getConformingTypeAsMetadata
+getMatchingType
+matches
+getContextDescriptor
+getSwiftProtocol
+isObjC
+getSuperclassConstraint
+getTrailingObjects<const swift::TargetMetadata<swift::InProcess> *>
+Sources/swiftlang/swiftlang-1300.0.47.5/swift/include/swift/ABI/TrailingObjects.h
+getTrailingObjectsImpl
+hasSuperclassConstraint
+getProtocols
+getTrailingObjects<swift::TargetProtocolDescriptorRef<swift::InProcess> >
+callNumTrailingObjects<const swift::TargetMetadata<swift::InProcess> *>
+numTrailingObjects
+dyn_cast<swift::TargetExistentialTypeMetadata<swift::InProcess>, const swift::TargetMetadata<swift::InProcess> >
+isa<swift::TargetExistentialTypeMetadata<swift::InProcess>, const swift::TargetMetadata<swift::InProcess> *>
+ConformanceCandidate
+override_getCanonicalTypeMetadata
+getExistentialTypeMetadata
+getClassConstraint
+getField<0, 1, swift::ProtocolClassConstraint>
+getProtocolContextDescriptorFlags
+getKindSpecificFlags
+forSwift
+dyn_cast<swift::TargetProtocolDescriptor<swift::InProcess>, const swift::TargetContextDescriptor<swift::InProcess> >
+isa<swift::TargetProtocolDescriptor<swift::InProcess>, const swift::TargetContextDescriptor<swift::InProcess> *>
+operator bool
+getAccessFunction
+isGeneric
+dyn_cast<swift::TargetTypeContextDescriptor<swift::InProcess>, const swift::TargetContextDescriptor<swift::InProcess> >
+isa<swift::TargetTypeContextDescriptor<swift::InProcess>, const swift::TargetContextDescriptor<swift::InProcess> *>
+getTypeDescriptor
+operator swift::TargetContextDescriptor<swift::InProcess> **
+operator swift::TargetContextDescriptor<swift::InProcess> *
+getDirectObjCClassName
+getIndirectObjCClass
+getTypeKind
+getTypeReferenceKind
+getProtocol
+operator const swift::TargetProtocolDescriptor<swift::InProcess> *
+applyRelativeOffset<const swift::RelativeIndirectablePointer<const swift::TargetProtocolDescriptor<swift::InProcess>, true, int, swift::TargetProtocolDescriptor<swift::InProcess> *>, int>
+applyRelativeOffset<const swift::RelativeDirectPointerImpl<swift::TargetProtocolConformanceDescriptor<swift::InProcess>, false, int>, int>
+Snapshot
+getRootSuperclass

@@ -18,11 +18,11 @@
 		</data>
 		<key>Modules/onceBLE.swiftmodule/arm64-apple-ios-simulator.swiftinterface</key>
 		<data>
-		CLTUwFJ6BAX+36nyAi1y7VkPhfk=
+		XjfuCCKU1kA7ZQx2NWPp/2xjN24=
 		</data>
 		<key>Modules/onceBLE.swiftmodule/arm64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		dy2tqUlvRNfcXM+PXxwSQ6BBKkI=
+		Smn+HETAdgFoidW/uH/brxqP1g8=
 		</data>
 		<key>Modules/onceBLE.swiftmodule/arm64.swiftdoc</key>
 		<data>
@@ -30,11 +30,11 @@
 		</data>
 		<key>Modules/onceBLE.swiftmodule/arm64.swiftinterface</key>
 		<data>
-		CLTUwFJ6BAX+36nyAi1y7VkPhfk=
+		XjfuCCKU1kA7ZQx2NWPp/2xjN24=
 		</data>
 		<key>Modules/onceBLE.swiftmodule/arm64.swiftmodule</key>
 		<data>
-		dy2tqUlvRNfcXM+PXxwSQ6BBKkI=
+		Smn+HETAdgFoidW/uH/brxqP1g8=
 		</data>
 		<key>Modules/onceBLE.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
 		<data>
@@ -42,11 +42,11 @@
 		</data>
 		<key>Modules/onceBLE.swiftmodule/x86_64-apple-ios-simulator.swiftinterface</key>
 		<data>
-		wEpr75Rp3GwXPPr0ZSvoM7B7oh0=
+		nhFgfC1j6xBmvhWcAF+6izdINxI=
 		</data>
 		<key>Modules/onceBLE.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		xukPtia2Q8WYvMC3YSfkEIfs9Z4=
+		/yywlA9llqe3UgcYmpncRVmL/iI=
 		</data>
 		<key>Modules/onceBLE.swiftmodule/x86_64.swiftdoc</key>
 		<data>
@@ -54,11 +54,11 @@
 		</data>
 		<key>Modules/onceBLE.swiftmodule/x86_64.swiftinterface</key>
 		<data>
-		wEpr75Rp3GwXPPr0ZSvoM7B7oh0=
+		nhFgfC1j6xBmvhWcAF+6izdINxI=
 		</data>
 		<key>Modules/onceBLE.swiftmodule/x86_64.swiftmodule</key>
 		<data>
-		xukPtia2Q8WYvMC3YSfkEIfs9Z4=
+		/yywlA9llqe3UgcYmpncRVmL/iI=
 		</data>
 	</dict>
 	<key>files2</key>
@@ -81,14 +81,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			0UqEWSO0U7LycoR8E9wktSWBJGR54atstIzte6qMy8Y=
+			cppyGvWb7AD5BjgNxZkX7bP/o6iZJS+8Gdjk71NRNW8=
 			</data>
 		</dict>
 		<key>Modules/onceBLE.swiftmodule/arm64-apple-ios-simulator.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			57AGhGEU8qOC/kIpyntCJo9F8snX9iAp9WKZDf5FI/E=
+			2izV/Rq7HUc5DI4HMsA1Q5g0RSTHIM90uUTG1lnptY8=
 			</data>
 		</dict>
 		<key>Modules/onceBLE.swiftmodule/arm64.swiftdoc</key>
@@ -102,14 +102,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			0UqEWSO0U7LycoR8E9wktSWBJGR54atstIzte6qMy8Y=
+			cppyGvWb7AD5BjgNxZkX7bP/o6iZJS+8Gdjk71NRNW8=
 			</data>
 		</dict>
 		<key>Modules/onceBLE.swiftmodule/arm64.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			57AGhGEU8qOC/kIpyntCJo9F8snX9iAp9WKZDf5FI/E=
+			2izV/Rq7HUc5DI4HMsA1Q5g0RSTHIM90uUTG1lnptY8=
 			</data>
 		</dict>
 		<key>Modules/onceBLE.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
@@ -123,14 +123,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			A9P1ozutp316kpKfLEdqHiKNCASPulO9lBxqTe53R3Q=
+			G0iQlATW/ZMG0i61IQU9Y6b3JfIs7lDNfJnXSJBMoLk=
 			</data>
 		</dict>
 		<key>Modules/onceBLE.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			Hi66QnLhGCKmO/8ytHvjnSqCQq1gVPBmKjy1Wjli1EU=
+			3OID8OayP6cMCzJR+mDZInW3oCfMzo9EZrANrCHqAxQ=
 			</data>
 		</dict>
 		<key>Modules/onceBLE.swiftmodule/x86_64.swiftdoc</key>
@@ -144,14 +144,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			A9P1ozutp316kpKfLEdqHiKNCASPulO9lBxqTe53R3Q=
+			G0iQlATW/ZMG0i61IQU9Y6b3JfIs7lDNfJnXSJBMoLk=
 			</data>
 		</dict>
 		<key>Modules/onceBLE.swiftmodule/x86_64.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			Hi66QnLhGCKmO/8ytHvjnSqCQq1gVPBmKjy1Wjli1EU=
+			3OID8OayP6cMCzJR+mDZInW3oCfMzo9EZrANrCHqAxQ=
 			</data>
 		</dict>
 	</dict>

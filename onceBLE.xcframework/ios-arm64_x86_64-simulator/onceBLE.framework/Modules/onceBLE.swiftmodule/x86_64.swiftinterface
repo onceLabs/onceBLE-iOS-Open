@@ -4,7 +4,6 @@
 import Combine
 import CoreBluetooth
 import Foundation
-import NordicDFU
 import Swift
 import _Concurrency
 @objc @_inheritsConvenienceInitializers public class OBCentral : ObjectiveC.NSObject {
